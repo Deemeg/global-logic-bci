@@ -2,20 +2,6 @@
 
 Este servicio proporciona una funcionalidad completa para el registro y autenticación de usuarios utilizando JSON Web Tokens (JWT). Está construido con Java 11, Spring Boot 2.5.14 y Gradle 7.4.
 
-# Funcionalidades
-Registro de Usuarios: Permite a los usuarios registrarse a través del endpoint sign-up. 
-Al registrarse, se genera un JSON Web Token que debe ser utilizado para la autenticación.
-
-Autenticación de Usuarios: Los usuarios pueden iniciar sesión utilizando el endpoint login. 
-Deben incluir el token JWT en el encabezado de autorización con el formato Bearer + token.
-
-# Dependencias
-El servicio utiliza las siguientes tecnologías y dependencias:
-
-- Java 11
-- Spring Boot 2.5.14
-- Gradle 7.4
-
 # Requisitos
 - JDK 11
 - Gradle (a partir de la version 5.0)
@@ -26,6 +12,29 @@ las cuales deben ser configuradas en este para poder correr el proyecto:
 
 - #### jwt.secret: La clave secreta utilizada para firmar el token JWT.
 - #### jwt.expiration: El tiempo de expiración del token JWT, en milisegundos.
+
+# Instrucciones de uso
+### Clonar el repositorio: 
+
+git clone https://github.com/Deemeg/global-logic-bci.git
+
+### Navegar al directorio del proyecto:
+
+cd /global-logic-bci/bci-global-logic
+### Compilar el proyecto: 
+Utiliza Gradle para compilar el proyecto.
+./gradlew build
+
+### Ejecutar el servicio: 
+Una vez compilado con éxito, puedes ejecutar el servicio utilizando el siguiente comando:
+
+./gradlew bootRun
+Este comando inicia la aplicación Spring Boot.
+
+### Acceder al servicio: 
+Una vez que la aplicación se haya iniciado correctamente, puedes acceder al servicio a través de tu navegador web o utilizando herramientas como Postman.
+
+url: http://localhost:8080
 
 # Endpoints
 ### Registro de Usuarios:
@@ -54,7 +63,7 @@ las cuales deben ser configuradas en este para poder correr el proyecto:
   "password": "String",
   }
 - Header: Authorization: Bearer token
-# Uso
+# Funcionalidades
 ### Registro de Usuarios:
 
 Envía una solicitud POST al endpoint /api/v1/auth/sign-up con el body correspondiente:
