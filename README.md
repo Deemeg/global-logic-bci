@@ -16,25 +16,27 @@ las cuales deben ser configuradas en este para poder correr el proyecto:
 # Instrucciones de uso
 ### Clonar el repositorio: 
 
-git clone https://github.com/Deemeg/global-logic-bci.git
+`git clone https://github.com/Deemeg/global-logic-bci.git`
 
 ### Navegar al directorio del proyecto:
 
 cd /global-logic-bci/bci-global-logic
 ### Compilar el proyecto: 
 Utiliza Gradle para compilar el proyecto.
-./gradlew build
+
+`./gradlew build`
 
 ### Ejecutar el servicio: 
 Una vez compilado con éxito, puedes ejecutar el servicio utilizando el siguiente comando:
 
-./gradlew bootRun
+`./gradlew bootRun`
+
 Este comando inicia la aplicación Spring Boot.
 
 ### Acceder al servicio: 
 Una vez que la aplicación se haya iniciado correctamente, puedes acceder al servicio a través de tu navegador web o utilizando herramientas como Postman.
 
-url: http://localhost:8080
+`url: http://localhost:8080`
 
 # Endpoints
 ### Registro de Usuarios:
